@@ -1,0 +1,6 @@
+# ipykernel
+spacy-udpipe==1.0.0
+docx2txt==0.8
+pysimplegui==4.59.0
+pymupdf==1.16.16
+pyinstaller==4.10

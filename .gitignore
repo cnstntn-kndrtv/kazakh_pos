@@ -6,6 +6,9 @@ temp
 *.log
 _DEL_*
 _BAK_*
+NOTES.md
+docker
+docker-compose.yml
 
 # python and tools
 __pycache__
