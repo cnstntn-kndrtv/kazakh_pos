@@ -2,6 +2,7 @@
 '''PDF pages counter with GUI.'''
 
 import os.path
+import sys
 import traceback
 
 import docx2txt
@@ -10,10 +11,16 @@ import PySimpleGUI as sg
 import spacy_udpipe
 
 try:
+    ROOT_PATH = sys._MEIPASS
+except:
+    ROOT_PATH = '.'
+
+
+try:
     sg.theme('Green Tan')
 
     nlp_ud = spacy_udpipe.load_from_path(lang='tr',
-                                    path='./kazakh-ud-2.0-170801.udpipe',
+                                    path=f'{ROOT_PATH}/kazakh-ud-2.0-170801.udpipe',
                                     meta={"description": "Custom 'kz' model"})
 
     file_list_column = [
